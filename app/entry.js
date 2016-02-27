@@ -1,5 +1,4 @@
-require("react");
-require("./scripts/components/app");
+import App from "./scripts/components/app";
 
 ReactDOM.render(
   <App />,

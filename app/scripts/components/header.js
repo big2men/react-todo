@@ -3,9 +3,11 @@ var Header = React.createClass({
     return (
       <header className="header">
         <h1 className="header__heading">
-          {this.children}
+          {this.props.children}
         </h1>
       </header>
     );
   }
 });
+
+module.exports = Header;
