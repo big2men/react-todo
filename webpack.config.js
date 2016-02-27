@@ -1,3 +1,9 @@
+var webpack = require("webpack");
+var provider = new webpack.ProvidePlugin({
+  React: "react",
+  ReactDOM: "react-dom"
+});
+
 module.exports = {
   context: __dirname + "/app",
   entry: "./entry",
@@ -16,5 +22,8 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins: [
+    provider
+  ]
 };
