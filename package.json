@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack",
-    "build": "npm run webpack"
+    "webpack-watch": "webpack --watch",
+    "build": "npm run webpack",
+    "develop": "npm run webpack-watch"
   },
   "author": "stars.big2men@gmail.com",
   "license": "ISC",
